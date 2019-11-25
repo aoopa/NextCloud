@@ -1,5 +1,5 @@
 #!/bin/bash
-# Aoo - NextCloud installation wrapper # Version 1.0.0.2
+# Aoo Script - NextCloud installation wrapper # Version 1.0.0.3
 # NextCloud v14 | # PHP V 7.0
 # Script Developed by Apivat Pattana-Anurak 
 # SysAdmin & Programmer Form #Bangkok #Thailand 
