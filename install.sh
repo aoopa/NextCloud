@@ -1,3 +1,10 @@
+#!/bin/bash
+# Aoo Basic installation wrapper # Version 1.0.0.2
+# Script Developed by Apivat Pattana-Anurak
+# SysAdmin & Programmer Form #Bangkok #Thailand 
+# curl -O https://raw.githubusercontent.com/aoopa/Nextcloud/master/install.sh
+# sh install.sh
+
 #########################################
 ##### Step 1 : Install Apache Web Server
 yum install httpd -y
@@ -22,10 +29,12 @@ systemctl enable mariadb
 
 mysql_secure_installation
 mysql -u root -p
-CREATE DATABASE nextcloud;
-create user 'bestidc'@localhost identified by 'Biss@min2019';
-GRANT ALL PRIVILEGES ON nextcloud.* TO 'bestidc'@'localhost';
-FLUSH PRIVILEGES;
+####### ตั้งค่า-เริ่มสร้าง Database , Uname , Pass โดยตอบคำถามดังต่อไปนี้
+#Answer1 CREATE DATABASE nextcloud;
+#Answer2 create user 'bestidc'@localhost identified by 'Biss@min2019';
+#Answer3 GRANT ALL PRIVILEGES ON nextcloud.* TO 'bestidc'@'localhost';
+#Answer4 FLUSH PRIVILEGES;
+#Answer5 exit;
 
 #########################################
 ##### Step 3: Install NextCloud
