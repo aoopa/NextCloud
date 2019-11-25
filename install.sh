@@ -31,11 +31,11 @@ systemctl enable mariadb
 mysql_secure_installation
 mysql -u root -p
 ####### ตั้งค่า-เริ่มสร้าง Database , Uname , Pass โดยตอบคำถามดังต่อไปนี้
-#Answer1 CREATE DATABASE nextcloud;
-#Answer2 create user 'bestidc'@localhost identified by 'Biss@min2019';
-#Answer3 GRANT ALL PRIVILEGES ON nextcloud.* TO 'bestidc'@'localhost';
-#Answer4 FLUSH PRIVILEGES;
-#Answer5 exit;
+#Answer1 : CREATE DATABASE nextcloud;
+#Answer2 : create user 'bestidc'@localhost identified by 'Biss@min2019';
+#Answer3 : GRANT ALL PRIVILEGES ON nextcloud.* TO 'bestidc'@'localhost';
+#Answer4 : FLUSH PRIVILEGES;
+#Answer5 : exit;
 
 #########################################
 ##### Step 3: Install NextCloud
