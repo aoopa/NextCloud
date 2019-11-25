@@ -1,6 +1,6 @@
 #!/bin/bash
-# Aoo Basic installation wrapper # Version 1.0.0.2
-# Script Developed by Apivat Pattana-Anurak
+# Aoo - NextCloud installation wrapper # Version 1.0.0.2
+# Script Developed by Apivat Pattana-Anurak 
 # SysAdmin & Programmer Form #Bangkok #Thailand 
 # curl -O https://raw.githubusercontent.com/aoopa/Nextcloud/master/install.sh
 # sh install.sh
