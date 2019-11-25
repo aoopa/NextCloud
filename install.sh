@@ -36,17 +36,17 @@ mkdir nextcloud/data
 chown -R apache:apache nextcloud
 rm nextcloud-14-latest.tar.bz2
 
-echo -e Alias /nextcloud "/var/www/html/nextcloud/"
+echo -e " Alias /nextcloud "/var/www/html/nextcloud/" "
 >> /etc/httpd/conf.d/nextcloud.conf
-echo -e <Directory /var/www/html/nextcloud/>\n
-        Options +FollowSymlinks \n
-        AllowOverride All \n
-        <IfModule mod_dav.c> \n
-        Dav off    \n
-        </IfModule>  \n
-        SetEnv HOME /var/www/html/nextcloud \n
-        SetEnv HTTP_HOME /var/www/html/nextcloud     \n
-        </Directory>  "
+echo -e "<Directory /var/www/html/nextcloud/>\n
+         Options +FollowSymlinks \n
+         AllowOverride All \n
+         <IfModule mod_dav.c> \n
+         Dav off    \n
+         </IfModule>  \n
+         SetEnv HOME /var/www/html/nextcloud \n
+         SetEnv HTTP_HOME /var/www/html/nextcloud     \n
+         </Directory>  "
 >> /etc/httpd/conf.d/nextcloud.conf
 
 #########################################
@@ -59,3 +59,4 @@ semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/nextcloud/.user.in
 restorecon -Rv '/var/www/html/nextcloud/'
 
 setsebool -P httpd_can_network_connect_db 1
+systemctl restart httpd
